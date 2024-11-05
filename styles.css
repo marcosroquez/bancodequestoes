@@ -1,0 +1,111 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #1D446F;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container central */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Espaço para logo */
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Caixa de login */
+.login-box {
+    background-color: #19385F;
+    padding: 40px;
+    border-radius: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os elementos no centro horizontalmente */
+    justify-content: center; /* Garante alinhamento vertical */
+    gap: 20px;
+    height: 350px; /* Define uma altura fixa */
+}
+
+/* Campos de entrada */
+.input-field {
+    width: 80%; /* Reduz a largura das caixas de texto */
+    background-color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+/* Botão de login */
+.login-button {
+    width: 60%; /* Botão mais compacto */
+    background-color: white;
+    color: #19385F;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #e6e6e6;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Botão de cadastro */
+.cadastro-button {
+    display: block; /* Faz o link se comportar como um bloco */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: white;
+    color: #19385F;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 16px;
+    width: 60%; /* Pode ajustar conforme necessário */
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.cadastrese-button{
+    display: block; /* Faz o link se comportar como um bloco */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: white;
+    color: #19385F;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%; /* Pode ajustar conforme necessário */
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.cadastro-button:hover {
+    background-color: #e6e6e6;
+}
+

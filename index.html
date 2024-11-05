@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="Logo UB.png.png" alt="Logo" />
+    </div>
+
+    <div class="login-box">
+      <input type="text" placeholder="Login" class="input-field" id="login">
+      <input type="password" placeholder="Senha" class="input-field" id="senha">
+      <div class="button-container">
+        <button class="login-button" onclick="redirecionar()">&nbsp;&nbsp;Entrar&nbsp;&nbsp;</button>
+        <a href="cadastro.html" class="cadastro-button">Cadastro</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function redirecionar() {
+      const login = document.getElementById('login').value;
+      const senha = document.getElementById('senha').value;
+
+      if (login && senha) {
+        window.location.href = 'tela_inicial.html'; // Redireciona para a página de destino
+      } else {
+        alert('Por favor, preencha todos os campos!'); // Mensagem de alerta
+      }
+    }
+  </script>
+</body>
+</html>
